@@ -1,6 +1,3 @@
-[![AppVeyor Build Status](https://img.shields.io/appveyor/build/bigegg/leetcode-cs?label=Windows%20Build%20Status&logo=AppVeyor&style=flat-square)](https://ci.appveyor.com/project/BigEgg/leetcode-cs)
-[![Solved Problems](https://img.shields.io/badge/Solved%20Problems-825-blue.svg?style=flat-square)](https://github.com/BigEggStudy/LeetCode-CS)
-
 # LeetCode
 Fork from BigEggStudy repo. This repo contains my C# soultions for LeetCode problems.
 
