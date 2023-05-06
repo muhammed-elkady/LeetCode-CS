@@ -2,7 +2,7 @@
 [![Solved Problems](https://img.shields.io/badge/Solved%20Problems-825-blue.svg?style=flat-square)](https://github.com/BigEggStudy/LeetCode-CS)
 
 # LeetCode
-The C# solutions for LeetCode problems.
+Fork from BigEggStudy repo. This repo contains my C# soultions for LeetCode problems.
 
 ## Problems
 
