@@ -4,20 +4,31 @@
 // Link: https://leetcode.com/submissions/detail/261553087/
 //-----------------------------------------------------------------------------
 
+using System.Collections.Generic;
+using System.Linq;
+
 namespace LeetCode
 {
     public class _0169_MajorityElement
     {
         public int MajorityElement(int[] nums)
         {
-            int count = 0, candidate = 0;
-            foreach (var num in nums)
-            {
-                if (count == 0) candidate = num;
-                count += (num == candidate) ? 1 : -1;
-            }
+            var dict = new Dictionary<int, int>();
 
-            return candidate;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (dict.ContainsKey(nums[i]))
+                {
+                    dict[nums[i]]++;
+                }
+                else
+                {
+                    dict.Add(nums[i], 1);
+                }
+            }
+            // TODO: find a better solution by finding a candidate
+            var mostRepeatedElement = dict.OrderByDescending(c => c.Value).First().Key;
+            return mostRepeatedElement;
         }
     }
 }
